@@ -14,7 +14,7 @@ class CounterModule(reactContext: ReactApplicationContext) : ReactContextBaseJav
         Log.d("CounterModule", "Logged from our CounterModule")
         userName = user
         eventCounter += 1
-        callback.invoke("Data returned from Conter Native module, eventCounter = $eventCounter")
+        callback.invoke("Data returned from Counter Native module, eventCounter = $eventCounter")
     }
 
     @ReactMethod

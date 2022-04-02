@@ -47,6 +47,9 @@ const App = () => {
 
   return (
     <View style={styles.Container}>
+      <View style={styles.TitleContainer}>
+        <Text style={styles.TextTitle}>React Native View</Text>
+      </View>
       <TouchableOpacity
         style={styles.Button}
         onPress={() => nativeModuleEvent()}>
@@ -56,7 +59,7 @@ const App = () => {
       <TouchableOpacity
         style={styles.Button}
         onPress={() => nativeModulePromise()}>
-        <Text style={styles.TextButton}>Promise</Text>
+        <Text style={styles.TextButton}>Promise Button</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.Button} onPress={() => openActivity()}>
@@ -71,6 +74,20 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  TitleContainer: {
+    height: 100,
+    width: '90%',
+    backgroundColor: '#9aa4aa',
+    marginBottom: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+  TextTitle: {
+    color: '#4e4e50',
+    fontSize: 40,
+    fontWeight: 'bold',
   },
   Button: {
     height: 65,
